@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCrafterz - Affordable Programming & Design Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: black;
+  background-color: rgb(0, 0, 0);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: rgba(0, 0, 0, 0.493);
+  color: white;
+  padding: 1rem 0;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #141e2b, #000b0e);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+.cta-buttons a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background: #1a73e8;
+  margin-right: 20px;
+}
+
+.btn-primary:hover{
+    background-color: #000027;
+}
+
+.btn-secondary {
+  background: #00c6ff;
+}
+
+.btn-secondary:hover{
+    transform: scale(1.15);
+}
+ .btn-secondary:hover {
+  opacity: 0.9;
+  box-shadow: 2px 0 2px #064b87, -2px 0 2px #a9a9f1;
+  transition: 0.3s;
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.services h2 {
+  margin-bottom: 30px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.542);
+  border-radius: 10px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  
+}
+
+.card:hover{
+box-shadow: 40px 0 100px #064b87, -40px 0 100px #000027;
+transform: scale(1.1);
+transition: 0.3s;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #1a73e8;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo{
+  width: 100px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">CodeCrafterz</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Affordable Professional Programming & Design Solutions!</h1>
+      <p>Get your projects done by skilled experts at unbeatable prices.</p>
+      <div class="cta-buttons">
+        <a href="#services" class="btn-primary">Get Started</a>
+        <a href="#contact" class="btn-secondary">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card card-1">
+          <h3>Video Editing:</h3>
+          <p>Tedious and time-consuming, editing is often outsourced to focus more on content creation.
+          </p>
+        </div>
+        <div class="card card-2">
+          <h3>Thumbnail Creation:</h3>
+          <p>Essential for clicks; creators outsource to professionals who understand YouTube’s visual trends.
+          </p>
+        </div>
+        <div class="card card-3">
+          <h3>Scriptwriting & Research:</h3>
+          <p> Brainstorming fresh ideas and detailed scripts takes time, making it a frequent outsource.
+          </p>
+        </div>
+        <div class="card card-4">
+          <h3>Translation & Dubbing:</h3>
+          <p> Allows YouTubers to reach new audiences, especially popular in multilingual regions like India.
+          </p>
+        </div>
+        <div class="card card-5">
+          <h3>SEO & Video Optimization:</h3>
+          <p> Optimizing tags, descriptions, and titles requires technical knowledge for better reach.
+          </p>
+        </div>
+        <div class="card card-6">
+          <h3>Social Media Management:</h3>
+          <p>  Engaging with fans and promoting videos is essential but time-consuming for creators.
+          </p>
+        </div>
+        <div class="card card-7">
+          <h3>Closed Captioning & Subtitling: </h3>
+          <p> Subtitles increase accessibility, and many creators outsource for accuracy and ease.
+          </p>
+        </div>
+        <div class="card card-8">
+          <h3>B-Roll and Stock Footage Sourcing: </h3>
+          <p> Finding quality B-roll takes time; outsourcing saves creators from sifting through footage.
+          </p>
+        </div>
+        <div class="card card-9">
+          <h3>Analytics and Insights: </h3>
+          <p> Tracking viewer engagement metrics is essential but complex, so creators outsource for analysis.
+          </p>
+        </div>
+        <div class="card card-10">
+          <h3>Brand Partnerships & Sponsorship Outreach: </h3>
+          <p> Managing sponsorships is profitable but tedious, so agents handle the logistics.
+          </p>
+        </div>
+        <div class="card card-11">
+          <h3>Brand Partnerships & Sponsorship Outreach: </h3>
+          <p> Managing sponsorships is profitable but tedious, so agents handle the logistics.
+          </p>
+        </div>
+        <div class="card card-12">
+          <h3>Brand Partnerships & Sponsorship Outreach: </h3>
+          <p> Managing sponsorships is profitable but tedious, so agents handle the logistics.
+          </p>
+        </div>
+        <div class="card card-13">
+          <h3>Brand Partnerships & Sponsorship Outreach: </h3>
+          <p> Managing sponsorships is profitable but tedious, so agents handle the logistics.
+          </p>
+        </div>
+        <!-- Add more services as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2024 CodeCrafterz. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

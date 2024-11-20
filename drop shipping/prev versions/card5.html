@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeCrafterz - Affordable Programming & Design Services</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Geist+Mono:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        line-height: 1.6;
+        color: black;
+        background-color: rgb(0, 0, 0);
+      }
+
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      /* Header */
+      header {
+        background: rgba(0, 0, 0, 0.493);
+        color: white;
+        padding: 1rem 0;
+      }
+
+      header .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      header nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      header nav ul li {
+        margin-left: 20px;
+      }
+
+      header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      header nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      /* Hero Section */
+      .hero {
+        text-align: center;
+        padding: 100px 20px;
+        color: white;
+        background: linear-gradient(
+          45deg,
+          #cc0985,
+          #4a2fc3,
+          #b11e1e,
+          rgb(227, 75, 10)
+        );
+        background-size: 300% 300%;
+        animation: gradientAnimation 5s ease-in-out infinite;
+      }
+
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        margin-bottom: 30px;
+        font-size: 1.2rem;
+      }
+
+      .cta-buttons a {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+      }
+
+      .btn-primary {
+        background: #1a73e8;
+        margin-right: 20px;
+      }
+
+      .btn-primary:hover {
+        background-color: #000027;
+      }
+
+      .btn-secondary {
+        background: #00c6ff;
+      }
+
+      .btn-secondary:hover {
+        transform: scale(1.15);
+      }
+      .btn-secondary:hover {
+        opacity: 0.9;
+        box-shadow: 20px 0 20px #064b87, -20px 0 20px #020233;
+        transition: 0.3s;
+        background-color: #5954f4;
+      }
+
+      /* Services Section */
+      .services {
+        padding: 50px 20px;
+        background: #f4f4f4;
+        text-align: center;
+      }
+
+      .services h2 {
+        margin-bottom: 30px;
+      }
+
+      .service-cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: rgba(255, 255, 255, 0.542);
+        border-radius: 10px;
+        position: relative;
+      }
+
+      /* Service Card Styles with Animated Gradient */
+      /* Blurred Animated Gradient for Service Cards */
+      .card {
+        background: white;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Blurred Background Animation
+.card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #f73e97, #4fa1ff, #f5b452, #15333b);
+  background-size: 300% 300%;
+  animation: blurredGradientAnimation 8s ease-in-out infinite;
+  filter: blur(300px);
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* Gradient Animation Keyframes */
+      /* @keyframes blurredGradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+      /* Hover Effect for Cards */
+
+      .card:hover {
+        box-shadow: 40px 0 100px #064b87, -40px 0 100px #000027;
+        transform: scale(1.1);
+        transition: 0.3s;
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+        color: #1a73e8;
+      }
+
+      /* Footer */
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      .logo {
+        width: 100px;
+      }
+
+      /* Navbar Link Styles */
+      header nav ul li a {
+        position: relative;
+        color: white;
+        text-decoration: none; /* Remove the default underline */
+        font-weight: bold;
+        padding: 5px 0;
+        transition: color 0.3s ease;
+      }
+
+      /* Hover Effect: Animated Line */
+      header nav ul li a::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #1a73e8; /* Line color */
+        transition: width 0.3s ease;
+      }
+
+      /* On Hover: Expand the Line */
+      header nav ul li a:hover::after {
+        width: 100%;
+      }
+
+      /* Dark Animated Background for Services Section */
+      .services-sec {
+        padding: 50px 20px;
+        background: linear-gradient(45deg, #000027, #1a1a1a, #000000, #0a0a0a);
+        background-size: 300% 300%;
+        border-radius: 10px;
+        animation: darkGradientAnimation 8s ease-in-out infinite;
+      }
+
+      /* Keyframes for Gradient Animation */
+      @keyframes darkGradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .vision {
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(
+          45deg,
+          #ee7777,
+          #a9fda9,
+          #aaaaff,
+          #ebc58d,
+          #a6f3ff
+        );
+        background-size: 400% 400%;
+        animation: movingBackground 15s ease-in-out infinite;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        height: 500px;
+      }
+
+      @keyframes movingBackground {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .bg {
+        width: 400px;
+        height: 500px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .about {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body class="">
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="logo">IndizMedia</div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Affordable Professional Programming & Design Solutions!</h1>
+        <p>Get your projects done by skilled experts at unbeatable prices.</p>
+        <div class="cta-buttons">
+          <a href="#services" class="btn-primary">Get Started</a>
+          <a href="#contact" class="btn-secondary">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="vision">
+          <video src="bg.mp4" autoplay class="bg"></video>
+          <div class="about">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+              voluptatum itaque corporis soluta dolore! Numquam dolore ducimus
+              commodi, culpa assumenda tenetur modi sequi, veritatis expedita
+              nihil voluptas quis exercitationem dicta?
+            </p>
+          </div>
+        </div>
+        <h2>Our Services</h2>
+        <div class="service-cards">
+          <div class="card card-1">
+            <h3>Video Editing:</h3>
+            <p>
+              Tedious and time-consuming, editing is often outsourced to focus
+              more on content creation.
+            </p>
+          </div>
+          <div class="card card-2">
+            <h3>Thumbnail Creation:</h3>
+            <p>
+              Essential for clicks; creators outsource to professionals who
+              understand YouTube’s visual trends.
+            </p>
+          </div>
+          <div class="card card-3">
+            <h3>Scriptwriting & Research:</h3>
+            <p>
+              Brainstorming fresh ideas and detailed scripts takes time, making
+              it a frequent outsource.
+            </p>
+          </div>
+          <div class="card card-4">
+            <h3>Translation & Dubbing:</h3>
+            <p>
+              Allows YouTubers to reach new audiences, especially popular in
+              multilingual regions like India.
+            </p>
+          </div>
+          <div class="card card-5">
+            <h3>SEO & Video Optimization:</h3>
+            <p>
+              Optimizing tags, descriptions, and titles requires technical
+              knowledge for better reach.
+            </p>
+          </div>
+          <div class="card card-6">
+            <h3>Social Media Management:</h3>
+            <p>
+              Engaging with fans and promoting videos is essential but
+              time-consuming for creators.
+            </p>
+          </div>
+          <div class="card card-7">
+            <h3>Closed Captioning & Subtitling:</h3>
+            <p>
+              Subtitles increase accessibility, and many creators outsource for
+              accuracy and ease.
+            </p>
+          </div>
+          <div class="card card-8">
+            <h3>B-Roll and Stock Footage Sourcing:</h3>
+            <p>
+              Finding quality B-roll takes time; outsourcing saves creators from
+              sifting through footage.
+            </p>
+          </div>
+          <div class="card card-9">
+            <h3>Analytics and Insights:</h3>
+            <p>
+              Tracking viewer engagement metrics is essential but complex, so
+              creators outsource for analysis.
+            </p>
+          </div>
+          <div class="card card-10">
+            <h3>Brand Partnerships & Sponsorship Outreach:</h3>
+            <p>
+              Managing sponsorships is profitable but tedious, so agents handle
+              the logistics.
+            </p>
+          </div>
+          <div class="card card-11">
+            <h3>Brand Partnerships & Sponsorship Outreach:</h3>
+            <p>
+              Managing sponsorships is profitable but tedious, so agents handle
+              the logistics.
+            </p>
+          </div>
+          <div class="card card-12">
+            <h3>Brand Partnerships & Sponsorship Outreach:</h3>
+            <p>
+              Managing sponsorships is profitable but tedious, so agents handle
+              the logistics.
+            </p>
+          </div>
+          <div class="card card-13">
+            <h3>Brand Partnerships & Sponsorship Outreach:</h3>
+            <p>
+              Managing sponsorships is profitable but tedious, so agents handle
+              the logistics.
+            </p>
+          </div>
+          <!-- Add more services as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2024 CodeCrafterz. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

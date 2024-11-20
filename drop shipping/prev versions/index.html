@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        background-color: aliceblue;
+        color: rgb(8, 29, 57);
+        margin: 0;
+        padding: 0;
+      }
+      .header{
+        display: flex;
+        margin: 0;
+      }
+      .logo {
+        font-size: 330%;
+        font-family:  "Anton SC",sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      .nav-bar{
+        display: flex;
+      }
+      .ul{
+        display: flex;
+        position: relative;
+        
+        /* background-color: black; */
+      }
+      li{
+        list-style: none;
+        margin-right: 10%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      li:hover{
+        cursor: pointer;
+        color: black;
+        text-decoration: underline;
+      }
+      #Contact-Us{
+        padding: 1em 2em;
+        background-color: rgb(12, 12, 58);
+        border: none;
+        color: aliceblue;
+        border-radius: 20px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+      }
+      #Contact-Us:hover{
+        box-shadow: 40px 0 100px #008cff, -40px 0 100px #e100ff;
+      }
+      #Contact-Us::after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        background-image: linear-gradient(to bottom right, #008cff,#ab2cb9);
+        z-index: -1;
+      }
+      .main-div{
+        background-color: aliceblue;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card{
+        cursor: pointer;
+        height: 200px;
+        width: 200px;
+        background-color: #ab2cb9;
+        position: relative;
+        
+      }
+      .card::after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        /* top: 50%;
+        left: 50%; */
+        /* translate: -50%,-50%; */
+        /* z-index: -1; */
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Logo</h1>
+      <nav class="nav-bar">
+        <ul class="ul">
+          <li>Home</li>
+          <li>Services</li>
+          <li>About Us</li>
+          <button id="Contact-Us">Contact Us</button>
+        </ul>
+      </nav>
+    </header>
+    <div class="main-div">
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem et corrupti veniam amet autem doloribus deleniti ratione repellat quo possimus enim quidem magnam minima, placeat tempora maxime commodi sunt molestias.
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+  </body>
+</html>

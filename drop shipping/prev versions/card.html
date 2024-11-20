@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        *{
+            color: whitesmoke;
+        }
+      body {
+        background-color: rgb(0, 0, 12);
+        margin-left: 0px;
+      }
+      .heading {
+        width: 100%;
+      }
+
+      .logo {
+        font-size: 330%;
+        font-family: "Anton SC", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: whitesmoke;
+        margin: 0px;
+        padding: 0px;
+        cursor: pointer;
+      }
+
+      .nav-bar{
+        height: 50px;
+        background-color: rgb(0, 0, 12);
+        margin-left: 0px;
+        
+      }
+
+      .menu{
+        display: flex;
+        align-items: end;
+      }
+
+      li{
+        list-style: none;
+        padding-right: 20px;
+        font-size: x-large;
+        cursor: pointer;
+      }
+
+      .CU{
+        background-color: aliceblue;
+        color: rgb(1, 1, 14);
+        font-weight: 700;
+        border-radius: 20px;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        transition: 0.3s;
+      }
+
+      .CU:hover{
+        background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+        box-shadow: 40px 0 100px #008cff, -40px 0 100px #e100ff;
+        opacity: 0.9;
+      }
+
+      .CU::after{
+        background-image: linear-gradient(to bottom right, #008cff, #ab2cb9);
+        filter: blur(1.5rem);
+      }
+
+      .card-container{
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: rgba(0, 0, 0, 0.707);
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      
+      .card {
+        
+        position: relative;
+        cursor: pointer;
+        height: 250px;
+        width: 97%;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        margin: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+      }
+      .card::after,
+      .card::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: red;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: -1;
+        padding: 5px;
+        border-radius: 10px;
+        background-image: conic-gradient(
+          #ff4545,
+          #00ff99,
+          #006aff,
+          #ff0095,
+          #ff4545
+        );
+        transition: 0.3s;
+      }
+
+      .card:hover::before {
+        filter: blur(1.5rem);
+        opacity: 1;
+        box-shadow: 40px 0 100px #ff4545,40px 0 100px #006aff;
+        transform: scale(1.1);
+      }
+
+      p {
+        padding: 10px;
+        text-align: center;
+      }
+
+      footer {
+    background-color: #000000b1;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #999;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.fa-google:hover{
+    color: rgb(255, 0, 0);
+}
+
+.fa-linkedin:hover{
+    color: blue;
+}
+
+.fa-facebook:hover{
+    color: rgb(90, 90, 227);
+}
+
+.fa-instagram:hover{
+    color: rgb(216, 57, 160);
+}
+
+.footer-links a {
+    display: block;
+    color: #999;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.contact h3 {
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #999;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.video-edit{
+  width: 200px;
+}
+
+    </style>
+
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1 class="logo">Logo</h1>
+      </div>
+      <nav class="nav-bar">
+        <ul class="menu">
+            <li>Home</li>
+            <li>Service</li>
+            <li>About Us</li>
+            <li class="CU">Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="card-container">
+      <div class="card">
+        <p>
+          <img src="video edit.webp" alt="" class="video-edit">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+          porro impedit nulla in perferendis officiis cupiditate. Culpa velit
+          esse veritatis, at suscipit atque deleniti hic totam! Quam odio illo
+          vel officia omnis voluptate modi provident, expedita repudiandae
+          consequatur deleniti iusto dolorem sequi neque. Sunt laboriosam beatae
+          alias recusandae repellat. Saepe nobis corporis eum dicta repellendus
+          expedita commodi, sint dolorum, molestias inventore reiciendis,
+          impedit qui? Labore quaerat consequuntur quos maxime corporis vitae,
+          deserunt magni minus in ipsam alias maiores pariatur esse accusamus
+          iste consectetur amet itaque praesentium et rem illum libero sit velit
+          blanditiis? Unde corporis culpa temporibus debitis explicabo. Eius!
+        </p>
+      </div>
+      <div class="card">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+          porro impedit nulla in perferendis officiis cupiditate. Culpa velit
+          esse veritatis, at suscipit atque deleniti hic totam! Quam odio illo
+          vel officia omnis voluptate modi provident, expedita repudiandae
+          consequatur deleniti iusto dolorem sequi neque. Sunt laboriosam beatae
+          alias recusandae repellat. Saepe nobis corporis eum dicta repellendus
+          expedita commodi, sint dolorum, molestias inventore reiciendis,
+          impedit qui? Labore quaerat consequuntur quos maxime corporis vitae,
+          deserunt magni minus in ipsam alias maiores pariatur esse accusamus
+          iste consectetur amet itaque praesentium et rem illum libero sit velit
+          blanditiis? Unde corporis culpa temporibus debitis explicabo. Eius!
+        </p>
+      </div>
+      <div class="card">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+          porro impedit nulla in perferendis officiis cupiditate. Culpa velit
+          esse veritatis, at suscipit atque deleniti hic totam! Quam odio illo
+          vel officia omnis voluptate modi provident, expedita repudiandae
+          consequatur deleniti iusto dolorem sequi neque. Sunt laboriosam beatae
+          alias recusandae repellat. Saepe nobis corporis eum dicta repellendus
+          expedita commodi, sint dolorum, molestias inventore reiciendis,
+          impedit qui? Labore quaerat consequuntur quos maxime corporis vitae,
+          deserunt magni minus in ipsam alias maiores pariatur esse accusamus
+          iste consectetur amet itaque praesentium et rem illum libero sit velit
+          blanditiis? Unde corporis culpa temporibus debitis explicabo. Eius!
+        </p>
+      </div>
+      <div class="card">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+          porro impedit nulla in perferendis officiis cupiditate. Culpa velit
+          esse veritatis, at suscipit atque deleniti hic totam! Quam odio illo
+          vel officia omnis voluptate modi provident, expedita repudiandae
+          consequatur deleniti iusto dolorem sequi neque. Sunt laboriosam beatae
+          alias recusandae repellat. Saepe nobis corporis eum dicta repellendus
+          expedita commodi, sint dolorum, molestias inventore reiciendis,
+          impedit qui? Labore quaerat consequuntur quos maxime corporis vitae,
+          deserunt magni minus in ipsam alias maiores pariatur esse accusamus
+          iste consectetur amet itaque praesentium et rem illum libero sit velit
+          blanditiis? Unde corporis culpa temporibus debitis explicabo. Eius!
+        </p>
+      </div>
+      <div class="card">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+          porro impedit nulla in perferendis officiis cupiditate. Culpa velit
+          esse veritatis, at suscipit atque deleniti hic totam! Quam odio illo
+          vel officia omnis voluptate modi provident, expedita repudiandae
+          consequatur deleniti iusto dolorem sequi neque. Sunt laboriosam beatae
+          alias recusandae repellat. Saepe nobis corporis eum dicta repellendus
+          expedita commodi, sint dolorum, molestias inventore reiciendis,
+          impedit qui? Labore quaerat consequuntur quos maxime corporis vitae,
+          deserunt magni minus in ipsam alias maiores pariatur esse accusamus
+          iste consectetur amet itaque praesentium et rem illum libero sit velit
+          blanditiis? Unde corporis culpa temporibus debitis explicabo. Eius!
+        </p>
+      </div>
+      <div class="card">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+          porro impedit nulla in perferendis officiis cupiditate. Culpa velit
+          esse veritatis, at suscipit atque deleniti hic totam! Quam odio illo
+          vel officia omnis voluptate modi provident, expedita repudiandae
+          consequatur deleniti iusto dolorem sequi neque. Sunt laboriosam beatae
+          alias recusandae repellat. Saepe nobis corporis eum dicta repellendus
+          expedita commodi, sint dolorum, molestias inventore reiciendis,
+          impedit qui? Labore quaerat consequuntur quos maxime corporis vitae,
+          deserunt magni minus in ipsam alias maiores pariatur esse accusamus
+          iste consectetur amet itaque praesentium et rem illum libero sit velit
+          blanditiis? Unde corporis culpa temporibus debitis explicabo. Eius!
+        </p>
+      </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Logo</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="https://www.instagram.com/saurabh_kumar_0100110/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Terms Of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund Policy</a>
+            </div>
+            <div class="contact">
+                <h3>Get In Touch</h3>
+                <p>info@Kaushik.in</p>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2024 [Drop Shipping] | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
